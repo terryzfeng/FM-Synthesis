@@ -37,7 +37,7 @@ different timbres and effects to create synthesetic instruments.
 - Modulation Index: 2
 - ASR: 200 700 500* (ms)
   
-\* - Exponential Decay Envelope with according to the [T60](https://ccrma.stanford.edu/~jos/st/Audio_Decay_Time_T60.html)
+\* - Exponential Decay Envelope with respect to [T60](https://ccrma.stanford.edu/~jos/st/Audio_Decay_Time_T60.html)
 
 ## Setup
 
