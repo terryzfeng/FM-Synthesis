@@ -1,39 +1,40 @@
-#N canvas 30 391 1204 516 12;
+#N canvas 30 391 1206 516 12;
 #N canvas 0 50 450 250 (subpatch) 0;
 #X array melody 19 float 3;
 #A 0 16 14 6 6 8 8 13 11 2 2 4 4 11 9 1 1 4 4 9;
 #X coords 0 20 19 0 200 140 1;
 #X restore 81 329 graph;
-#X obj 484 257 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 379 138 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 243 246 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 138 127 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 484 278 metro 250;
-#X text 484 229 Metronome;
-#X text 221 267 START MELODY;
-#X msg 568 187 0;
-#X text 507 188 reset;
-#X obj 662 235 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 379 159 metro 250;
+#X text 379 110 Metronome;
+#X text 116 148 START MELODY;
+#X msg 463 68 0;
+#X text 402 69 reset;
+#X obj 557 116 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 662 253 float 0;
-#X floatatom 662 280 5 0 0 0 - - -;
-#X floatatom 754 253 5 0 0 0 - - -;
-#X text 812 252 counter;
-#X obj 754 281 + 1;
-#X text 662 207 Counter;
-#X floatatom 736 72 5 0 0 0 - - -;
-#X floatatom 736 127 5 0 0 0 - - -;
-#X text 796 72 index;
-#X obj 736 99 tabread melody;
-#X obj 359 202 delay 4750;
-#X text 735 46 Melody Read;
+#X obj 557 134 float 0;
+#X floatatom 557 161 5 0 0 0 - - -;
+#X floatatom 649 134 5 0 0 0 - - -;
+#X text 707 133 counter;
+#X obj 649 162 + 1;
+#X text 557 88 Counter;
+#X floatatom 754 221 5 0 0 0 - - -;
+#X floatatom 754 276 5 0 0 0 - - -;
+#X text 814 221 index;
+#X obj 754 248 tabread melody;
+#X obj 254 83 delay 4750;
+#X text 753 195 Melody Read;
 #X msg 299 329 \; melody resize 19 \; melody bounds 0 20 19 0 \; melody
 xlabel 0 0 5 10 15 20 \; melody ylabel 0 0 5 10 15 20 \; melody 0 16
 14 6 6 8 8 13 11 2 2 4 4 11 9 1 1 4 4 9 9 \;;
 #X text 1103 12 terry feng;
 #X text 1026 33 plastic drum sequence;
-#X obj 175 150 inlet;
-#X text 797 127 note pitch;
+#X obj 70 31 inlet;
+#X text 815 276 note pitch;
+#X obj 894 368 outlet;
 #X connect 1 0 3 0;
 #X connect 2 0 1 0;
 #X connect 2 0 6 0;
@@ -49,6 +50,7 @@ xlabel 0 0 5 10 15 20 \; melody ylabel 0 0 5 10 15 20 \; melody 0 16
 #X connect 11 0 13 0;
 #X connect 13 0 9 1;
 #X connect 15 0 18 0;
+#X connect 16 0 26 0;
 #X connect 18 0 16 0;
 #X connect 19 0 1 0;
 #X connect 24 0 2 0;
