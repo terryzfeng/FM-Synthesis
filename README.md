@@ -5,9 +5,9 @@ Exploring Frequency Modulation Synthesis in Pure Data
 This Pure Data project features 4 FM instruments: Brass, Clarinet, Plastic Drum
 and Ghost. By manipulating and maintaining *carrier* and *modulation*
 frequency relationships, controlling an *index of modulation* for
-modulation amplitude, as well as different amplitude envelopes for each note, we can
-control the presence of harmonic overtones, thus using 
-different timbres and effects to create synthesetic instruments.
+modulation amplitude, as well as different overall ASR envelopes for each note, we can
+control the presence of harmonic overtones, thus making 
+different timbres and effects to create unique FM synthesized instruments.
 
 **Brass**
 - Fundamental Frequency: f<sub>0<sub/>
