@@ -1,7 +1,7 @@
-#N canvas 30 391 1206 516 12;
+#N canvas 19 178 1205 514 12;
 #N canvas 0 50 450 250 (subpatch) 0;
-#X array PDSeq 13 float 3;
-#A 0 146 146 146 146 196 196 392 196 130 130 130 130 130;
+#X array BSeq 13 float 3;
+#A 0 329 329 329 329 293 293 246 261 293 293 293 293 329;
 #X coords 0 600 15 0 200 140 1 0 0;
 #X restore 137 328 graph;
 #X obj 379 138 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -25,21 +25,21 @@
 #X text 814 221 index;
 #X text 753 195 Melody Read;
 #X text 1103 12 terry feng;
-#X text 1026 33 plastic drum sequence;
 #X obj 70 31 inlet;
 #X text 815 276 note pitch;
 #X obj 894 368 outlet;
-#X text 116 148 START PD Sequence;
-#X obj 754 248 tabread PDSeq;
 #X obj 254 83 delay 3250;
-#X msg 138 207 \; PDSeq resize 13 \; PDSeq bounds 0 600 15 0 \; PDSeq
-xlabel 0 0 5 10 15 \; PDSeq ylabel 0 0 150 300 450 600 \; PDSeq 0 146
-146 146 146 196 196 349 196 130 130 130 130 130 \;, f 62;
+#X text 1074 34 brass sequence;
+#X obj 754 248 tabread BSeq;
+#X text 140 149 START BSequence;
+#X msg 138 207 \; BSeq resize 13 \; BSeq bounds 0 600 15 0 \; BSeq
+xlabel 0 0 5 10 15 \; BSeq ylabel 0 0 150 300 450 600 \; BSeq 0 329
+329 329 329 293 293 246 261 293 293 293 293 329 \;, f 62;
 #X connect 1 0 3 0;
 #X connect 2 0 1 0;
 #X connect 2 0 5 0;
 #X connect 2 0 26 0;
-#X connect 2 0 25 0;
+#X connect 2 0 22 0;
 #X connect 3 0 7 0;
 #X connect 5 0 10 0;
 #X connect 5 0 9 0;
@@ -50,7 +50,7 @@ xlabel 0 0 5 10 15 \; PDSeq ylabel 0 0 150 300 450 600 \; PDSeq 0 146
 #X connect 10 0 12 0;
 #X connect 12 0 8 1;
 #X connect 14 0 24 0;
-#X connect 15 0 22 0;
-#X connect 20 0 2 0;
+#X connect 15 0 21 0;
+#X connect 19 0 2 0;
+#X connect 22 0 1 0;
 #X connect 24 0 15 0;
-#X connect 25 0 1 0;
