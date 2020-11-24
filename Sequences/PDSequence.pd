@@ -34,7 +34,7 @@
 #X obj 254 83 delay 3250;
 #X msg 138 207 \; PDSeq resize 13 \; PDSeq bounds 0 600 15 0 \; PDSeq
 xlabel 0 0 5 10 15 \; PDSeq ylabel 0 0 150 300 450 600 \; PDSeq 0 146
-146 146 146 196 196 349 196 130 130 130 130 130 \;, f 62;
+146 146 146 196 196 392 196 130 130 130 130 130 \;, f 62;
 #X connect 1 0 3 0;
 #X connect 2 0 1 0;
 #X connect 2 0 5 0;
