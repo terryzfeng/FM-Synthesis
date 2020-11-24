@@ -10205,16 +10205,12 @@
 #X obj 703 86 / 1000;
 #X text 548 60 test button;
 #X msg 401 291 0;
-#X obj 190 62 loadbang;
-#X msg 190 87 0.001;
-#X text 24 4 when loading with 0 values there is a weird glitch as
-the decay needs to accept input;
-#X text 783 533 I think because this never reaches 0 \, there is always
-a weird glitch as the note never fully ends. Probably happening with
-the T60. It makes a weird click at the end when there are two ghosts
-connected to the output.;
 #X text 900 124 T60;
 #X obj 810 385 /~ 0.4;
+#X obj 218 59 loadbang;
+#X msg 218 83 0.001;
+#X text 24 4 when loading with 0 values there is a weird glitch as
+the decay needs to accept input. Flushing existing values.;
 #X connect 0 0 4 0;
 #X connect 0 0 13 0;
 #X connect 1 0 3 0;
@@ -10224,12 +10220,12 @@ connected to the output.;
 #X connect 4 1 2 0;
 #X connect 4 2 5 0;
 #X connect 5 0 6 0;
-#X connect 6 0 47 0;
+#X connect 6 0 43 0;
 #X connect 8 0 38 0;
 #X connect 8 0 32 0;
 #X connect 10 0 11 0;
 #X connect 11 0 12 0;
-#X connect 12 0 47 1;
+#X connect 12 0 43 1;
 #X connect 13 0 10 0;
 #X connect 13 1 14 0;
 #X connect 14 0 15 0;
@@ -10257,8 +10253,8 @@ connected to the output.;
 #X connect 35 0 38 0;
 #X connect 39 0 0 0;
 #X connect 41 0 21 0;
-#X connect 42 0 43 0;
-#X connect 43 0 30 0;
-#X connect 43 0 29 0;
-#X connect 43 0 27 0;
-#X connect 47 0 8 0;
+#X connect 43 0 8 0;
+#X connect 44 0 45 0;
+#X connect 45 0 30 0;
+#X connect 45 0 29 0;
+#X connect 45 0 27 0;
