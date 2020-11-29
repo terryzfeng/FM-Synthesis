@@ -43,7 +43,7 @@ different timbres and effects to create unique FM synthesized instruments.
 
 1. Download and install [Pure Data](https://github.com/pure-data/pure-data)
 
-2. Open [./A5](./A5)
+2. Open `./A5`
 
 &ndash; terry feng
 
