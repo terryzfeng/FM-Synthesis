@@ -45,6 +45,8 @@ different timbres and effects to create unique FM synthesized instruments.
 
 2. Open `./A5`
 
+3. Add all the folders to the PD path
+
 &ndash; terry feng
 
 
